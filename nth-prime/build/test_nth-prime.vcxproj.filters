@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\29c82d26ec1b555273f04a5dac394c37\test_nth-prime.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\test_nth-prime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5D0B6FD9-8341-3F1A-8658-44808FDE1023}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

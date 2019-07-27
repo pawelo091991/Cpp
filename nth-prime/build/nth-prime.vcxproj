@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E95AB13-1474-38C2-85C1-5A5696A6B1F7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>nth-prime</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nth-prime.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nth-prime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nth-prime.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nth-prime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nth-prime.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nth-prime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nth-prime.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nth-prime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/pawel/Exercism/cpp/nth-prime/build/Debug/nth-prime.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/pawel/Exercism/cpp/nth-prime/build/Debug/nth-prime.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/pawel/Exercism/cpp/nth-prime/build/Release/nth-prime.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/pawel/Exercism/cpp/nth-prime/build/Release/nth-prime.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/pawel/Exercism/cpp/nth-prime/build/MinSizeRel/nth-prime.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/pawel/Exercism/cpp/nth-prime/build/MinSizeRel/nth-prime.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/pawel/Exercism/cpp/nth-prime/build/RelWithDebInfo/nth-prime.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/pawel/Exercism/cpp/nth-prime/build/RelWithDebInfo/nth-prime.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Programy\CMake\bin\cmake.exe -SC:/Users/pawel/Exercism/cpp/nth-prime -BC:/Users/pawel/Exercism/cpp/nth-prime/build --check-stamp-file C:/Users/pawel/Exercism/cpp/nth-prime/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeSystem.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\feature_tests.cxx;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Programy\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Programy\CMake\bin\cmake.exe -SC:/Users/pawel/Exercism/cpp/nth-prime -BC:/Users/pawel/Exercism/cpp/nth-prime/build --check-stamp-file C:/Users/pawel/Exercism/cpp/nth-prime/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeSystem.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\feature_tests.cxx;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Programy\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Programy\CMake\bin\cmake.exe -SC:/Users/pawel/Exercism/cpp/nth-prime -BC:/Users/pawel/Exercism/cpp/nth-prime/build --check-stamp-file C:/Users/pawel/Exercism/cpp/nth-prime/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeSystem.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\feature_tests.cxx;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Programy\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Programy\CMake\bin\cmake.exe -SC:/Users/pawel/Exercism/cpp/nth-prime -BC:/Users/pawel/Exercism/cpp/nth-prime/build --check-stamp-file C:/Users/pawel/Exercism/cpp/nth-prime/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/pawel/Exercism/cpp/nth-prime/CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\3.14.2\CMakeSystem.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\feature_tests.cxx;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Programy\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Programy\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\pawel\Exercism\cpp\nth-prime\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\pawel\Exercism\cpp\nth-prime\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\pawel\Exercism\cpp\nth-prime\nth_prime_test.cpp" />
+    <ClCompile Include="C:\Users\pawel\Exercism\cpp\nth-prime\nth_prime.cpp" />
+    <ClInclude Include="C:\Users\pawel\Exercism\cpp\nth-prime\nth_prime.h" />
+    <ClCompile Include="C:\Users\pawel\Exercism\cpp\nth-prime\test\tests-main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\pawel\Exercism\cpp\nth-prime\build\ZERO_CHECK.vcxproj">
+      <Project>{83B39492-4227-3DFD-95F2-87F1B756AAB5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,7 +1,5 @@
 #include "nth_prime.h"
-
-
-
+//test
 
 int prime::nth(uint32_t targetPrime) {
 	uint32_t prime = 0;
