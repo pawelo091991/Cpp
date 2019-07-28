@@ -1,5 +1,6 @@
 #include "queen_attack.h"
 #include "test/catch.hpp"
+#define EXERCISM_RUN_ALL_TESTS
 
 TEST_CASE("queens_in_default_positions")
 {
