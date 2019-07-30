@@ -1,6 +1,6 @@
 #include "hexadecimal.h"
 #include "test/catch.hpp"
-
+#define EXERCISM_RUN_ALL_TESTS
 TEST_CASE("hex_1_is_decimal_1")
 {
     REQUIRE(0x1 == hexadecimal::convert("1"));
