@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 // Collatz-conjecture exercise test case data version 1.2.1
-
+#define EXERCISM_RUN_ALL_TESTS
 TEST_CASE("zero_steps_for_one") 
 {
     REQUIRE(0 == collatz_conjecture::steps(1));
