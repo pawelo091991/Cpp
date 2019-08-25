@@ -1,7 +1,7 @@
 #include "clock.h"
 #include "test/catch.hpp"
 #include <sstream>
-
+#define EXERCISM_RUN_ALL_TESTS
 using namespace std;
 
 struct timeTest {

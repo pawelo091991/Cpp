@@ -1,50 +1,31 @@
 #include "clock.h"
 
-std::string date_independent::clock::at(int H, int M) {
-	if (M < 0) {
-		H -= M / 60;
-		M = M % 60;
-	}
-	if (H < -24) {
-		H = H % 24;
-	}
+namespace date_independent {
+	clock clock::at(int hours, int minutes) {
+		constexpr int HOURS_IN_DAY{ 24 };
+		constexpr int MINUTES_IN_HOUR{ 60 };
+		constexpr int MINUTES_IN_DAY{ HOURS_IN_DAY * MINUTES_IN_HOUR };
 
-	if (H < 0) {
-		H = 24 - abs(H);
-		H = abs(H);
-	}
+		int total_mins{ minutes + hours * MINUTES_IN_HOUR };
+		total_mins = (total_mins % MINUTES_IN_DAY + MINUTES_IN_DAY) % MINUTES_IN_DAY;
+		minutes = total_mins % MINUTES_IN_HOUR;
+		hours = total_mins / MINUTES_IN_HOUR;
 
-
-
-	if (M > 60) {
-		H += M / 60;
-		M = M % 60;
+		return clock{ hours, minutes };
 	}
 
-	if (H > 24)
-		H = H % 24;
-
-	if (H == 24)
-		H = 0;
-
-	if (M == 60) {
-		M = 0;
-		H++;
+	clock::operator std::string() const {
+		std::stringstream ss;
+		ss << std::setfill('0') << std::setw(2) << this->m_hours << ":"
+			<< std::setw(2) << this->m_minutes;
+		return ss.str();
 	}
 
-	std::stringstream ssH;
-	std::stringstream ssM;
-	ssH << H;
-	std::string sH = ssH.str();
-	ssM << M;
-	std::string sM = ssM.str();
+	clock clock::plus(int minutes) {
+		return clock::at(this->m_hours, this->m_minutes + minutes);
+	}
 
-	if (H < 10)
-		sH = "0" + sH;
-	
-	if (M < 10)
-		sM = "0" + sM;
-
-	std::string time = sH + ":" + sM;
-	return time;
+	bool clock::operator==(clock c) const {
+		return this->m_hours == c.m_hours && this->m_minutes == c.m_minutes;
+	}
 }
