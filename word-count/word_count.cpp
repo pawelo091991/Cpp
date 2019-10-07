@@ -4,24 +4,12 @@ namespace word_count {
 
 	std::map<std::string, int> words(std::string text) {
 		std::map<std::string, int> dict;
-		std::string buff = "";
-		for (int i = 0; i <= text.length(); i++) {
-			if (std::isalpha(text[i]) || std::isdigit(text[i]) || (text[i] == '\'' && text[i-1] == 'n'))
-				buff += std::tolower(text[i]);
-
-			else if (buff == "")
-				continue;
-
-			else {
-				std::map<std::string, int>::iterator it;
-				it = dict.find(buff);
-				if (it == dict.end())
-					dict[buff] = 1;
-				else
-					dict[buff]++;
-
-				buff = "";
-			}
+		std::regex patt("[a-z1-9]+'?\\b[a-z]?");
+		std::smatch match;
+		for (int i = 0; i < text.size(); i++) { text[i] = std::tolower(text[i]); }
+		while (std::regex_search(text, match, patt)) {
+			dict[match.str()]++;
+			text = match.suffix().str();
 		}
 		return dict;
 	}
