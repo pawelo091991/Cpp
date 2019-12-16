@@ -7,16 +7,13 @@ namespace circular_buffer {
 	template<typename T>
 	class circular_buffer {
 		std::vector<T> buffer;
-		bool empty = true;
-		int cur = 0;
-		int end = 0;
+		int size;
 	public:
-		circular_buffer(int n);
+		circular_buffer(int size);
 		T read();
 		void write(T n);
 		void clear();
 		void overwrite(T n);
-
 	};
 }  // namespace circular_buffer
 

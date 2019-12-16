@@ -2,7 +2,7 @@
 #include "circular_buffer.h"
 #include "circular_buffer.cpp"
 #include <stdexcept>
-
+#define EXERCISM_RUN_ALL_TESTS
 // Circular-buffer exercise test case data version 1.2.0
 
 TEST_CASE("reading_empty_buffer_should_fail") 
@@ -12,7 +12,7 @@ TEST_CASE("reading_empty_buffer_should_fail")
     REQUIRE_THROWS_AS(buffer.read(), std::domain_error);
 }
 
-
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("can_read_an_item_just_written") 
 {
     circular_buffer::circular_buffer<int> buffer(1);
@@ -48,6 +48,7 @@ TEST_CASE("items_are_read_in_the_order_they_are_written")
     expected = 2;
     REQUIRE(expected == buffer.read());
 }
+
 
 TEST_CASE("full_buffer_cant_be_written") 
 {
@@ -184,12 +185,14 @@ TEST_CASE("overwrite_replaces_the_oldest_item_remaining_in_buffer_following_a_re
     expected = 5;
     REQUIRE(expected == buffer.read());
 }
-#if defined(EXERCISM_RUN_ALL_TESTS)
+
+
+
 TEST_CASE("full_buffer_cant_be_written_after_overwrite") 
 {
     circular_buffer::circular_buffer<int> buffer(1);
 
-    REQUIRE_NOTHROW(buffer.write(1));
+	REQUIRE_NOTHROW(buffer.write(1));
     buffer.overwrite(2);
     REQUIRE_THROWS_AS(buffer.write(3), std::domain_error);
 

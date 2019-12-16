@@ -2,52 +2,40 @@
 
 namespace circular_buffer {
 	template<typename T>
-	circular_buffer<T>::circular_buffer(int n) {
-		buffer.resize(n);
+	circular_buffer<T>::circular_buffer(int size) {
+		this->size = size;
 	}
 
 	template<typename T>
 	T circular_buffer<T>::read() {
-
-		if (empty == true)
+		if (buffer.empty())
 			throw std::domain_error("Buffer is empty");
 
-
-		if (buffer[end % buffer.size()] == NULL)
-			throw std::domain_error("nothing to read");
-		int return_index = end++ % buffer.size();
-
-		T return_value = buffer[return_index];
-		buffer[return_index] = NULL;
-
+		T return_value = *buffer.begin();
+		buffer.erase(buffer.begin());
 		return return_value;
 	}
 
 	template<typename T>
 	void circular_buffer<T>::write(T n) {
-		int index = cur++ % buffer.size();
+		if (buffer.size() == size)
+			throw std::domain_error("Buffer is full");
 
-		if (buffer[index] == NULL) {	//allow to write condition
-			empty = false;				//buffer no longer empty
-			buffer[index] = n;			//write to buffer
-		}
-		else
-			throw std::domain_error("Place is occupied"); //There is something already!
+		buffer.push_back(n);
 	}
 
 	template<typename T>
 	void circular_buffer<T>::clear() {
-		for (int i = 0; i < buffer.size(); i++)
-			buffer[i] = NULL;
-			empty = true;
+		buffer.erase(buffer.begin(), buffer.end());
 	}
 
 	template<typename T>
 	void circular_buffer<T>::overwrite(T n) {
-		if (cur % 3 == end % 3)
-			end++;
-
-		int index = cur++ % buffer.size();
-		buffer[index] = n;
+		if (buffer.size() < size)
+			buffer.push_back(n);
+		else {
+			buffer.erase(buffer.begin());
+			buffer.push_back(n);
+		}
 	}
 }  // namespace circular_buffer
